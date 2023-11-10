@@ -1195,7 +1195,7 @@ a {
     display:flex
 }
 .left-block-content,.right-block-content {
-    width:100%
+    width:50%
 }
 .text-wrapper {
     max-width:350px;
@@ -1797,10 +1797,7 @@ h2 {
 .block-horizontal-full-width {
         grid-column-gap:50px
     }
-.left-block-content {
-        width:100%;
-        flex-direction:column
-    }
+
 .right-block-content {
         width:100%
     }
@@ -1916,12 +1913,7 @@ h2 {
 .block-horizontal-full-width {
         flex-direction:column
     }
-.left-block-content {
-        text-align:center;
-        align-items:center;
-        margin-bottom:50px;
-        display:flex
-    }
+
 .subtitle-text {
         margin-bottom:20px
     }
@@ -2683,22 +2675,27 @@ img[src="data:,"],source[src="data:,"] {
 
 
 .right-block-content .image-container img {
-    margin-left: -40px; /* Adjust the value as needed to move the image to the left */
+    margin-left: -20px; /* Adjust the value as needed to move the image to the left */
   }
   
-/* If .left-block-content is within a flex container, we set it to take the full width */
-.flex-container {
-    flex-direction: column;
-}
-
 .left-block-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto; /* Center the block itself */
-    text-align: center; /* Center the text and inline elements */
+    margin: auto;
 }
 
-.left-block-content img,
-.left-block-content .subtitle-text img {
-    display: block; /* Make images block-level for centering */
-    margin: 0 auto; /* Center the block-level image horizontally */
+.left-block-content .text-wrapper,
+.left-block-content p,
+.left-block-content .subtitle-text {
+    text-align: center;
+    width: 100%;
+}
+
+.left-block-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
