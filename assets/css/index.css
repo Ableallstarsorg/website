@@ -2686,14 +2686,19 @@ img[src="data:,"],source[src="data:,"] {
     margin-left: -40px; /* Adjust the value as needed to move the image to the left */
   }
   
+/* If .left-block-content is within a flex container, we set it to take the full width */
+.flex-container {
+    flex-direction: column;
+}
+
 .left-block-content {
-    width: 100%; /* Take full width to allow centering */
-    margin: auto; /* Center the block itself if needed */
+    width: 100%;
+    margin: 0 auto; /* Center the block itself */
     text-align: center; /* Center the text and inline elements */
 }
 
-.left-block-content img {
-    display: block; /* Images are inline by default, make it block-level */
-    margin-left: auto; /* Center the block-level image horizontally */
-    margin-right: auto; /* Center the block-level image horizontally */
+.left-block-content img,
+.left-block-content .subtitle-text img {
+    display: block; /* Make images block-level for centering */
+    margin: 0 auto; /* Center the block-level image horizontally */
 }
