@@ -1195,7 +1195,7 @@ a {
     display:flex
 }
 .left-block-content,.right-block-content {
-    width:50%
+    width:100%
 }
 .text-wrapper {
     max-width:350px;
@@ -2683,6 +2683,6 @@ img[src="data:,"],source[src="data:,"] {
 
 
 .right-block-content .image-container img {
-    margin-left: -20px; /* Adjust the value as needed to move the image to the left */
+    margin-left: -40px; /* Adjust the value as needed to move the image to the left */
   }
   
