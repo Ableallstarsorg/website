@@ -2686,3 +2686,14 @@ img[src="data:,"],source[src="data:,"] {
     margin-left: -40px; /* Adjust the value as needed to move the image to the left */
   }
   
+.left-block-content {
+    width: 100%; /* Take full width to allow centering */
+    margin: auto; /* Center the block itself if needed */
+    text-align: center; /* Center the text and inline elements */
+}
+
+.left-block-content img {
+    display: block; /* Images are inline by default, make it block-level */
+    margin-left: auto; /* Center the block-level image horizontally */
+    margin-right: auto; /* Center the block-level image horizontally */
+}
