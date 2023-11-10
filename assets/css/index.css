@@ -2699,3 +2699,11 @@ img[src="data:,"],source[src="data:,"] {
     margin-left: auto;
     margin-right: auto;
 }
+
+.centered-text {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
