@@ -9,9 +9,44 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="elements/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="https://ableallstars.org" rel="canonical">
-  <link href="/assets/css/index.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
  </head>
  <body>
+   <script src="https://www.paypal.com/sdk/js?client-id=AZwkQX1vajNJx42vFeuK34KrkmaepW1Vz_kENAkCV2CWHbY0xYbZQ_qVQk0SolzywC-vsZ0sk_zRZ-2X"></script>
+   <script>
+   // Validation function
+   function validateAmount(amount) {
+       var isValid = !isNaN(parseFloat(amount)) && isFinite(amount) && amount > 0; // Check if the amount is a number and positive
+       if (!isValid) {
+           alert("Please enter a valid amount.");
+       }
+       return isValid;
+   }
+
+   paypal.Buttons({
+       createOrder: function(data, actions) {
+           var amount = document.getElementById('customAmount').value;
+           if (!validateAmount(amount)) {
+               return; // Stop the order creation if the amount is not valid
+           }
+           return actions.order.create({
+               purchase_units: [{
+                   amount: {
+                       value: amount
+                   }
+               }]
+           });
+       },
+       onApprove: function(data, actions) {
+           return actions.order.capture().then(function(details) {
+               alert('Transaction completed by ' + details.payer.name.given_name);
+               // Here you can call your server to save the transaction
+           });
+       }
+   }).render('#paypal-button-container');
+   </script>
+
+
 
 
    <nav class="mobile-nav">
@@ -50,18 +85,14 @@ Organized Group Play as well as Junior and Adult Pickleball Academies.
     </div>
    </div>
   </div>
-  <div class="image-wrapper-testimonials" data-w-id="5ce58f0f-3766-1200-bb0e-a3af7dbc15e0">
-     </div>
+    <div class="payment-container">
+        <label for="customAmount">Enter your amount:</label>
+        <input type="text" id="customAmount" name="customAmount" value="10.00">
+        <div id="paypal-button-container"></div>
+    </div>
 
-<form action="https://www.paypal.com/donate" method="post" target="_top" class="donate-form">
-  <input type="hidden" name="business" value="donations@kcparkfriends.org">
-  <input type="hidden" name="no_recurring" value="0">
-  <input type="hidden" name="item_name" value="Friends of the Park">
-  <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
-  <input type="hidden" name="currency_code" value="USD">
-  <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate" class="donate-button">
-  <img alt="" width="1" height="1" src="https://www.paypal.com/en_US/i/scr/pixel.gif">
-</form>
+
+
 
 
 
@@ -100,7 +131,7 @@ Invest in our mission to make pickleball more than just a sport, but a tool for 
   </div>
   <div>
     <div class="footer-copyright">
-      © Able Allstars All Rights Reserved 2023.
+      Able AllStars Inc. All Rights Reserved 2023.
       <a class="footer-copyright-link" href="https://ableallstars.org/licensing">
         Licensing
       </a>
