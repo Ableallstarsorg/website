@@ -2512,6 +2512,8 @@ img[src="data:,"],source[src="data:,"] {
     display: none;
     background-color: #000000;
     overflow: hidden;
+    z-index: 1000;
+    position: relative;
 }
 
 .mobile-nav ul {
