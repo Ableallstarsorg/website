@@ -75,7 +75,6 @@
   justify-content: flex-start;
 }
 .home-header {
-  width: 100%;
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
