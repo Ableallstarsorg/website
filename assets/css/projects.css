@@ -700,3 +700,21 @@
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+
+.home-mobile-menu {
+    display: none;
+}
+
+/* Show the mobile menu when 'is-active' class is added */
+.home-mobile-menu.is-active {
+    display: block;
+}
+
+/* Add additional styling for the mobile menu here */
+
+.menu-text {
+    /* Add your styling here */
+    margin-left: 10px; /* Adjust as needed */
+    vertical-align: middle; /* Align with the icon */
+    /* Other styling */
+}
