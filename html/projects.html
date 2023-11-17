@@ -30,22 +30,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font">
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // Select the burger menu icon, the mobile menu, and the close button
-      var burgerMenuIcon = document.querySelector('.home-burger-menu');
-      var mobileMenu = document.querySelector('.home-mobile-menu');
-      var closeButton = document.querySelector('.home-close-mobile-menu');
+        // Select the burger menu icon, the mobile menu, and the close button
+        var burgerMenuIcon = document.querySelector('.home-burger-menu');
+        var mobileMenu = document.querySelector('.home-mobile-menu');
+        var closeButton = document.querySelector('.home-close-mobile-menu');
 
-      // Function to toggle the mobile menu
-      function toggleMobileMenu() {
-          // Toggle a class (e.g., 'is-active') on the mobile menu
-          mobileMenu.classList.toggle('is-active');
-      }
+        // Function to toggle the mobile menu
+        function toggleMobileMenu() {
+            // Toggle a class (e.g., 'is-active') on the mobile menu
+            mobileMenu.classList.toggle('is-active');
+        }
 
-      // Add click event listeners
-      burgerMenuIcon.addEventListener('click', toggleMobileMenu);
-      closeButton.addEventListener('click', toggleMobileMenu); // Reuse the same function for closing
+        // Add click event listeners
+        burgerMenuIcon.addEventListener('click', toggleMobileMenu);
+        closeButton.addEventListener('click', toggleMobileMenu); // Reuse the same function for closing
     });
-
     </script>
   </head>
   <body>
