@@ -879,7 +879,7 @@
 
 @media (max-width: 600px) {
   .home-text23 {
-    max-width: 90%; /* Adjusted max-width for mobile */
+    max-width: 290; /* Adjusted max-width for mobile */
     margin-top: var(--dl-space-space-oneunit); /* Smaller top margin for mobile */
     margin-bottom: var(--dl-space-space-oneunit); /* Smaller bottom margin for mobile */
   }
@@ -1041,7 +1041,7 @@
     text-align: center;
   }
   .home-banner {
-    width: 967px;
+    width: 961px;
     height: 449px;
     padding-top: 104px;
   }
@@ -1094,10 +1094,11 @@
     padding: var(--dl-space-space-unit);
   }
   .home-banner {
-    height: 173px;
-    padding-top: 0px;
-    padding-left: 101px;
+    height: 125px;
+    padding-top: 1px;
+    padding-left: 105px;
     padding-right: 100px;
+    padding-bottom: 348px;
   }
 
 
