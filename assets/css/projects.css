@@ -1164,3 +1164,13 @@ button {
     border-style: outset;
     border-color: buttonborder;
     border-image: initial;
+
+
+    @media (max-width: 479px)
+    .home-image {
+        top: 139px;
+        left: 228px;
+        width: 188px;
+        height: 193px;
+        position: absolute;
+    }
