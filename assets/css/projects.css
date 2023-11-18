@@ -871,11 +871,20 @@
 
 .home-text23 {
   color: rgb(0, 0, 0);
-  max-width: var(--dl-size-size-maxwidth);
-  margin-top: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth); /* Default max-width */
+  margin-top: var(--dl-space-space-twounits); /* Default margin-top */
   text-align: center;
-  margin-bottom: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-twounits); /* Default margin-bottom */
 }
+
+@media (max-width: 600px) {
+  .home-text23 {
+    max-width: 90%; /* Adjusted max-width for mobile */
+    margin-top: var(--dl-space-space-oneunit); /* Smaller top margin for mobile */
+    margin-bottom: var(--dl-space-space-oneunit); /* Smaller bottom margin for mobile */
+  }
+}
+
 .home-container8 {
   flex: 0 0 auto;
   width: auto;
