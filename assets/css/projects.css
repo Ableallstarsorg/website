@@ -859,9 +859,16 @@
 }
 .home-text22 {
   color: #000000;
-  font-size: 3rem;
+  font-size: 3rem; /* Default font size for larger screens */
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .home-text22 {
+    font-size: 1.5rem; /* Smaller font size for mobile screens */
+  }
+}
+
 .home-text23 {
   color: rgb(0, 0, 0);
   max-width: var(--dl-size-size-maxwidth);
