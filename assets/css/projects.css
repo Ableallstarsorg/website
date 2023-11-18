@@ -501,9 +501,9 @@
     padding-bottom: var(--dl-space-space-twounits);
   }
   .home-image {
-    top: 134px;
-    left: 193px;
-    width: 173px;
+    top: 138px;
+    left: 236px;
+    width: 188px;
     height: 193px;
     position: absolute;
   }
@@ -938,7 +938,7 @@
 }
 @media(max-width: 1600px) {
   .home-image {
-    width: 227px;
+    width: 173px;
     height: 183px;
   }
   .home-text22 {
@@ -1164,13 +1164,3 @@ button {
     border-style: outset;
     border-color: buttonborder;
     border-image: initial;
-
-
-    @media (max-width: 479px)
-    .home-image {
-        top: 139px;
-        left: 228px;
-        width: 188px;
-        height: 193px;
-        position: absolute;
-    }
