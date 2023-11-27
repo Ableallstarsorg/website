@@ -1217,3 +1217,138 @@ button {
         background: rgb(255, 209, 64);
         color: rgb(0, 48, 135);
     }
+
+    @media screen and (max-width: 752px)
+    <style>
+    .css-6uv1f6-button_base-text_button_lg-branded {
+        font-size: min(1.125rem, 36px);
+        line-height: min(1.5rem, 48px);
+    }
+
+    <style>
+    .css-6uv1f6-button_base-text_button_lg-branded {
+        position: relative;
+        border-radius: 1000px;
+        cursor: pointer;
+        display: inline-block;
+        min-width: 6rem;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+        border: 0.125rem solid rgb(255, 209, 64);
+        font-family: PayPalOpen-Bold, "Helvetica Neue", Arial, sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        padding: 0.625rem 1.875rem;
+        background: rgb(255, 209, 64);
+        color: rgb(0, 48, 135);
+    }
+    .next-button {
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-wide {
+        width: 100%;
+        white-space: normal!important;
+    }
+    [type=button], [type=reset], [type=submit], button {
+        -webkit-appearance: button;
+    }
+    button, select {
+        text-transform: none;
+    }
+    button, input {
+        overflow: visible;
+    }
+    button, input, optgroup, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+    }
+    *, :after, :before {
+        box-sizing: inherit;
+    }
+    *, :after, :before {
+        box-sizing: inherit;
+    }
+    user agent stylesheet
+    button {
+        appearance: auto;
+        font-style: ;
+        font-variant-ligatures: ;
+        font-variant-caps: ;
+        font-variant-numeric: ;
+        font-variant-east-asian: ;
+        font-variant-alternates: ;
+        font-variant-position: ;
+        font-weight: ;
+        font-stretch: ;
+        font-size: ;
+        font-family: ;
+        font-optical-sizing: ;
+        font-kerning: ;
+        font-feature-settings: ;
+        font-variation-settings: ;
+        text-rendering: auto;
+        color: buttontext;
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        box-sizing: border-box;
+        background-color: buttonface;
+        margin: 0em;
+        padding-block: 1px;
+        padding-inline: 6px;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonborder;
+        border-image: initial;
+    }
+    body {
+        font-size: inherit!important;
+        font-family: PayPal-Sans,sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-smoothing: antialiased;
+    }
+    body {
+        background-color: #fff!important;
+        background-image: none!important;
+        position: relative;
+        color: #2c2e2f;
+    }
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin: 0;
+    }
+    body, html {
+        font-family: PayPalOpen-Regular,Helvetica Neue,Arial,sans-serif;
+        height: 100%;
+    }
+    html {
+        -webkit-text-size-adjust: 100%;
+        line-height: 1.15;
+    }
+    *, :after, :before {
+        box-sizing: inherit;
+    }
+    *, :after, :before {
+        box-sizing: inherit;
+    }
+    *, :after, :before {
+        box-sizing: inherit;
+    }
+    *, :after, :before {
+        box-sizing: inherit;
+    }
