@@ -1181,3 +1181,40 @@ button {
     border-style: outset;
     border-color: buttonborder;
     border-image: initial;
+
+    .btn-wide {
+        width: 100%;
+        white-space: normal!important;
+    }
+    .next-button {
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 752px)
+    <style>
+    .css-6uv1f6-button_base-text_button_lg-branded {
+        font-size: min(1.125rem, 36px);
+        line-height: min(1.5rem, 48px);
+    }
+
+    <style>
+    .css-6uv1f6-button_base-text_button_lg-branded {
+        position: relative;
+        border-radius: 1000px;
+        cursor: pointer;
+        display: inline-block;
+        min-width: 6rem;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+        border: 0.125rem solid rgb(255, 209, 64);
+        font-family: PayPalOpen-Bold, "Helvetica Neue", Arial, sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        padding: 0.625rem 1.875rem;
+        background: rgb(255, 209, 64);
+        color: rgb(0, 48, 135);
+    }
