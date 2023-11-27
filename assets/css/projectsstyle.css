@@ -118,3 +118,41 @@
     width: 100%;
     white-space: normal !important;
 }
+
+.css-5jli6g-button_base-text_button_lg-btn_full_width-secondary:hover {
+  background: transparent;
+  color: rgb(0, 112, 224);
+  border-color: rgb(0, 112, 224);
+  box-shadow: none;
+}
+.css-5jli6g-button_base-text_button_lg-btn_full_width-secondary:hover {
+  text-decoration: none;
+  background-color: rgb(0, 112, 224);
+  border-color: rgb(0, 112, 224);
+}
+.css-5jli6g-button_base-text_button_lg-btn_full_width-secondary:hover, .css-5jli6g-button_base-text_button_lg-btn_full_width-secondary:active, .css-5jli6g-button_base-text_button_lg-btn_full_width-secondary:visited {
+  color: rgb(255, 255, 255);
+}
+.css-5jli6g-button_base-text_button_lg-btn_full_width-secondary {
+  position: relative;
+  border-radius: 1000px;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 6rem;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+  border: 0.125rem solid rgb(0, 48, 135);
+    border-top-color: rgb(0, 48, 135);
+    border-right-color: rgb(0, 48, 135);
+    border-bottom-color: rgb(0, 48, 135);
+    border-left-color: rgb(0, 48, 135);
+  font-family: PayPalOpen-Bold, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  padding: 0.625rem 1.875rem;
+  background: transparent;
+  color: rgb(0, 48, 135);
+  box-shadow: transparent 0px 0px 0px 0.0625rem inset;
+}
