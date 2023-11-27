@@ -46,7 +46,85 @@
         closeButton.addEventListener('click', toggleMobileMenu); // Reuse the same function for closing
     });
     </script>
-  </head>
+  <style>
+.css-6uv1f6-button_base-text_button_lg-branded:hover {
+  background: rgb(255, 232, 136);
+  border-color: rgb(255, 232, 136);
+}
+.css-6uv1f6-button_base-text_button_lg-branded:hover, .css-6uv1f6-button_base-text_button_lg-branded:active, .css-6uv1f6-button_base-text_button_lg-branded:visited {
+  color: rgb(0, 48, 135);
+}
+.css-6uv1f6-button_base-text_button_lg-branded:hover {
+  text-decoration: none;
+  background-color: rgb(0, 112, 224);
+  border-color: rgb(0, 112, 224);
+}
+.css-6uv1f6-button_base-text_button_lg-branded:hover, .css-6uv1f6-button_base-text_button_lg-branded:active, .css-6uv1f6-button_base-text_button_lg-branded:visited {
+  color: rgb(255, 255, 255);
+}
+.css-6uv1f6-button_base-text_button_lg-branded {
+  position: relative;
+  border-radius: 1000px;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 6rem;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+  border: 0.125rem solid rgb(255, 209, 64);
+  font-family: PayPalOpen-Bold, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  padding: 0.625rem 1.875rem;
+  background: rgb(255, 209, 64);
+  color: rgb(0, 48, 135);
+}
+.next-button {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.btn-wide {
+  width: 100%;
+  white-space: normal !important;
+}
+[type="button"], [type="reset"], [type="submit"], button {
+  -webkit-appearance: button;
+}
+button, select {
+  text-transform: none;
+}
+button, input {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+body {
+  font-size: inherit !important;
+  font-family: PayPal-Sans,sans-serif;
+}
+body {
+  color: #2c2e2f;
+}
+body, html {
+  font-family: PayPalOpen-Regular,Helvetica Neue,Arial,sans-serif;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+</style></head>
   <body>
     <link rel="stylesheet" href="/assets/css/projectsstyle.css">
     <div>
@@ -107,11 +185,7 @@
           <h1 class="home-text22">Donate</h1>
 
         </div>
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="LDW2548TPW54Y">
-<input type="image" src="https://pics.paypal.com/00/s/YzIwODQ2ZmUtY2QwZC00NWUwLTk5MzQtOTMyZGI4MzVhNGQ3/file.PNG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+        <div class="mb-16"><button class="btn-wide next-button css-6uv1f6-button_base-text_button_lg-branded" data-ppui-info="buttons_7.7.4" id="payWithPP" pa-marked="1"><img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg" style="height: 24px; width: 24px; margin-right: 8px;">Donate with PayPal</button></div>
 
 <div class="home-banner">
           <h1 class="home-text22">Support Our Ball Courts: How Your Tax-Exempt Contributions Make a Difference</h1>
