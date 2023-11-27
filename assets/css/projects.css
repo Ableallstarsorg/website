@@ -1193,7 +1193,6 @@ button {
     }
 
     @media screen and (max-width: 752px)
-    <style>
     .css-6uv1f6-button_base-text_button_lg-branded {
         font-size: min(1.125rem, 36px);
         line-height: min(1.5rem, 48px);
@@ -1219,13 +1218,11 @@ button {
     }
 
     @media screen and (max-width: 752px)
-    <style>
     .css-6uv1f6-button_base-text_button_lg-branded {
         font-size: min(1.125rem, 36px);
         line-height: min(1.5rem, 48px);
     }
 
-    <style>
     .css-6uv1f6-button_base-text_button_lg-branded {
         position: relative;
         border-radius: 1000px;
@@ -1351,4 +1348,73 @@ button {
     }
     *, :after, :before {
         box-sizing: inherit;
+    }
+
+    .styles-module_post_donation_widget_container__h0QE- {
+      text-align: center;
+      margin: 2rem 0px 4rem;
+    }
+
+    .styles-module_post_donation_widget_container__h0QE- .styles-module_post_donation_body_text__DHiZh {
+      text-align: left;
+      margin: 2rem 0;
+    }
+
+    .styles-module_post_donation_widget_dialog__nyNvf {
+      height: 100vh;
+      max-height: 100vh !important;
+      max-width: 40rem;
+      text-align: center;
+    }
+
+    .styles-module_post_donation_widget_dialog__nyNvf section {
+      margin: 0;
+    }
+
+    .styles-module_post_donation_widget_dialog__nyNvf section .styles-module_body_content__er-xU,
+    .styles-module_post_donation_widget_dialog__nyNvf section .styles-module_list_content__F6OTN,
+    .styles-module_post_donation_widget_dialog__nyNvf section .styles-module_caption__b5ZPh {
+      text-align: left;
+    }
+
+    .styles-module_post_donation_widget_dialog__nyNvf section .styles-module_caption__b5ZPh {
+      margin: 1rem 0rem;
+    }
+
+    .styles-module_post_donation_widget_dialog__nyNvf section .styles-module_modal_button__qKJZV {
+      margin-bottom: 2rem;
+    }
+
+    .styles-module_post_donation_widget_container__h0QE- .styles-module_icon_wrapper__hYdSZ {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .styles-module_post_donation_widget_container__h0QE- .styles-module_icon_wrapper__hYdSZ .styles-module_icon_element__nVdjS {
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
+    .styles-module_post_donation_alert_wrapper__VYv47 {
+      margin-bottom: 1.5rem;
+    }
+
+    .styles-module_post_donation_alert_wrapper__VYv47 .styles-module_post_donation_alert__vcs9f {
+      border-radius: 0;
+    }
+
+    .styles-module_post_donation_widget_container__h0QE- .styles-module_post_donation_shimmer_body_text__klMKR {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .styles-module_post_donation_widget_container__h0QE- .styles-module_post_donation_shimmer_caption_text__I5OuK {
+      margin: 0 auto;
+      width: 11rem;
+    }
+
+    .styles-module_banner_image__Jd9zl {
+      height: 120px !important;
+      width: 120px !important;
     }
