@@ -158,7 +158,7 @@
   height: 176px;
   object-fit: cover;
   position: absolute;
-  top: 15%;
+  top: 9%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
