@@ -24,12 +24,7 @@
 }
 
 
-.header-logo {
-    height: 200px;  /* Adjust height to fit the header */
-    width: 200px;   /* Set a specific width or use auto to maintain aspect ratio */
-    vertical-align: middle;  /* Aligns the image vertically with the text in the links */
-    margin-right: 50px;  /* Adds some space between the logo and the first link */
-}
+
 
 
 
@@ -83,6 +78,13 @@
     display: flex;  /* Aligns items in a row and allows better control */
     align-items: center;  /* Vertically centers the content */
     height: 100px;  /* Limiting the header height */
+}
+
+.header-logo {
+    height: auto;  /* Adjust height to fit the header */
+    width: 200px;   /* Set a specific width or use auto to maintain aspect ratio */
+    vertical-align: middle;  /* Aligns the image vertically with the text in the links */
+    margin-right: 100px;  /* Adds some space between the logo and the first link */
 }
 .home-nav {
   flex: 0 0 auto;
