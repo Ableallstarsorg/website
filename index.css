@@ -24,7 +24,12 @@
 }
 
 
-
+.header-logo {
+    height: 200px;  /* Adjust height to fit the header */
+    width: 200px;   /* Set a specific width or use auto to maintain aspect ratio */
+    vertical-align: middle;  /* Aligns the image vertically with the text in the links */
+    margin-right: 50px;  /* Adds some space between the logo and the first link */
+}
 
 
 
@@ -75,14 +80,9 @@
   justify-content: flex-start;
 }
 .home-header {
-  display: flex;
-  max-width: var(--dl-size-size-maxwidth);
-  align-items: center;
-  padding-top: var(--dl-space-space-twounits);
-  padding-left: var(--dl-space-space-threeunits);
-  padding-right: var(--dl-space-space-threeunits);
-  padding-bottom: var(--dl-space-space-twounits);
-  justify-content: space-between;
+    display: flex;  /* Aligns items in a row and allows better control */
+    align-items: center;  /* Vertically centers the content */
+    height: 100px;  /* Limiting the header height */
 }
 .home-nav {
   flex: 0 0 auto;
