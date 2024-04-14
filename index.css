@@ -606,14 +606,14 @@
 }
 
 .header-logo-mobile {
-  display: none; /* Hidden by default */
-  width: 100px; /* Adjust size as needed */
-  margin: 10px auto; /* Centering the logo */
+  display: none; /* Ensures it's hidden on larger screens */
+  width: 100px; /* Set the width as required */
+  margin: 10px auto; /* Center the logo horizontally */
 }
 
-/* Media query for screens with max-width of 600px */
+/* Show the logo only on screens smaller than 600px */
 @media (max-width: 600px) {
   .header-logo-mobile {
-      display: block; /* Show only on small screens */
+      display: block; /* Only show on small screens */
   }
 }
