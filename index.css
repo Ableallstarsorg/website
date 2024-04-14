@@ -438,9 +438,10 @@
     z-index: 1000; /* Make sure it's above other content */
 }
   .home-mobile-menu {
-    width: 138px;
-    height: 341px;
+    width: 96px;
+    height: 296px;
     display: none;
+    border-bottom-right-radius: 10px;
   }
   .home-hero {
     padding-left: var(--dl-space-space-twounits);
