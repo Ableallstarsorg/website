@@ -587,12 +587,20 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* creates two columns */
   grid-template-rows: repeat(2, 1fr); /* creates two rows */
-  gap: 10px; /* space between the images */
+  gap: 20px; /* increased space between the images */
   width: 100%; /* adjust width as necessary */
-  max-width: 500px; /* optional: maximum width of the container */
+  max-width: 8004px; /* increased maximum width of the container */
 }
 
 .grid-image {
   width: 100%; /* each image takes full width of the grid cell */
   height: auto; /* maintain aspect ratio */
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* only one column */
+      grid-template-rows: auto auto auto auto; /* four rows */
+  }
 }
