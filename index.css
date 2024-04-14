@@ -593,18 +593,31 @@
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* creates two columns */
-  grid-template-rows: repeat(2, 1fr); /* creates two rows */
-  gap: 20px; /* increased space between the images */
-  width: 100%; /* adjust width as necessary */
-  max-width: 8004px; /* increased maximum width of the container */
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* One larger column for the big image, and one smaller */
+    grid-template-rows: repeat(3, 1fr); /* Three rows for smaller images */
+    gap: 7px;
+    width: 100%;
+    max-width: 750px;
 }
 
 .grid-image {
-  width: 100%; /* each image takes full width of the grid cell */
-  height: auto; /* maintain aspect ratio */
+    width: 100%;
+    height: 100%; /* Adjusted to fill the container */
+    object-fit: cover;
 }
+
+.grid-smallimage {
+    width: ;
+    height: 100%; /* Adjusted to fill the container */
+    object-fit: cover;
+}
+
+.large-image {
+    grid-column: 1 / 2; /* Occupies the first column */
+    grid-row: 1 / 4; /* Spans all three rows vertically */
+}
+
 
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
