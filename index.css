@@ -604,3 +604,16 @@
       grid-template-rows: auto auto auto auto; /* four rows */
   }
 }
+
+.header-logo-mobile {
+  display: none; /* Hidden by default */
+  width: 100px; /* Adjust size as needed */
+  margin: 10px auto; /* Centering the logo */
+}
+
+/* Media query for screens with max-width of 600px */
+@media (max-width: 600px) {
+  .header-logo-mobile {
+      display: block; /* Show only on small screens */
+  }
+}
