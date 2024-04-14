@@ -424,11 +424,15 @@
   .home-nav {
     display: none;
   }
-  .home-burger-menu {
+.home-burger-menu {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    position: absolute; /* Add positioning context */
+    top: 10px; /* Adjust top spacing */
+    left: 10px; /* Position it from the left side of the viewport */
+    z-index: 1000; /* Make sure it's above other content */
+}
   .home-mobile-menu {
     width: 138px;
     height: 341px;
@@ -616,4 +620,12 @@
   .header-logo-mobile {
       display: block; /* Only show on small screens */
   }
+}
+
+
+@media (max-width: 600px) {
+    .home-burger-menu {
+        justify-content: flex-start; /* Align items to the start of the flex container, i.e., left side */
+        left: 10px; /* Ensure it stays on the left */
+    }
 }
