@@ -582,3 +582,17 @@
     vertical-align: middle; /* Align with the icon */
     /* Other styling */
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* creates two columns */
+  grid-template-rows: repeat(2, 1fr); /* creates two rows */
+  gap: 10px; /* space between the images */
+  width: 100%; /* adjust width as necessary */
+  max-width: 500px; /* optional: maximum width of the container */
+}
+
+.grid-image {
+  width: 100%; /* each image takes full width of the grid cell */
+  height: auto; /* maintain aspect ratio */
+}
