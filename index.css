@@ -660,6 +660,7 @@
   position: relative;
   text-align: center;
   margin: 10px;
+  margin-bottom: 50px; /* Increased bottom margin to prevent overlap */
 }
 
 .member-image {
@@ -706,4 +707,3 @@
 .member-image:hover img {
   transform: scale(1.1); /* Optional: Scales the image on hover */
 }
-
