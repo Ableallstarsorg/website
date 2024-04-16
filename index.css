@@ -665,13 +665,17 @@
 .member-image {
   position: relative;
   overflow: hidden;
+  width: 100%; /* Ensures the image container fits the parent */
+  height: 300px; /* Fixed height for images */
 }
 
 .member-image img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Ensures the image stretches to cover the container width */
+  height: 100%; /* Ensures the image stretches to cover the container height */
+  object-fit: cover; /* Ensures the image covers the space without distortion */
   transition: transform 0.5s ease;
 }
+
 
 .overlay {
   position: absolute;
