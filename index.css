@@ -712,3 +712,14 @@
 .team-member p {
   color: white; /* Sets the text color to white for names and descriptions */
 }
+
+.teamhome-hero {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  min-height: 80vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: radial-gradient(circle at left top, rgb(30 31 29) 0.00%, rgb(37 67 91) 54.00%);
+}
