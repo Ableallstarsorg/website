@@ -647,3 +647,58 @@
         left: 10px; /* Ensure it stays on the left */
     }
 }
+
+
+.team-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 20%; /* Adjust based on how many members per row you want */
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+
+.member-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.overlay p {
+  margin: 0; /* Removes default paragraph margin */
+}
+
+.member-image:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.member-image:hover img {
+  transform: scale(1.1); /* Optional: Scales the image on hover */
+}
