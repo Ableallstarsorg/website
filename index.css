@@ -729,3 +729,9 @@
   justify-content: center;
   background-image: radial-gradient(circle at left top, rgb(30 31 29) 0.00%, rgb(37 67 91) 54.00%);
 }
+
+@media (max-width: 768px) {
+  .team-member {
+    width: 100%; 
+  }
+}
