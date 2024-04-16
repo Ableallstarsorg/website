@@ -707,3 +707,8 @@
 .member-image:hover img {
   transform: scale(1.1); /* Optional: Scales the image on hover */
 }
+
+.team-member h3,
+.team-member p {
+  color: white; /* Sets the text color to white for names and descriptions */
+}
