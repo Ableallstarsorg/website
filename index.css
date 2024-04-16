@@ -666,7 +666,7 @@
   position: relative;
   overflow: hidden;
   width: 100%; /* Ensures the image container fits the parent */
-  height: 300px; /* Fixed height for images */
+  min-height: 300px; /* Minimum height for images */
 }
 
 .member-image img {
@@ -676,20 +676,19 @@
   transition: transform 0.5s ease;
 }
 
-
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   background: rgba(0, 0, 0, 0.7); /* Black background with opacity */
   color: white;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 20px;
 }
@@ -701,8 +700,10 @@
 .member-image:hover .overlay {
   visibility: visible;
   opacity: 1;
+  bottom: 0; /* Ensures overlay grows downward with content */
 }
 
 .member-image:hover img {
   transform: scale(1.1); /* Optional: Scales the image on hover */
 }
+
