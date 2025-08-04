@@ -1,10 +1,22 @@
 {
-  "name": "kindly-voluminous-pheasant",
+  "name": "able-allstars-website",
   "version": "1.0.0",
+  "description": "Able AllStars ballcourts website for special needs kids and adults",
   "private": true,
-  "dependencies": {
-    "parcel-bundler": "^1.6.1"
+  "scripts": {
+    "start": "npx http-server . -p 8080 -o",
+    "dev": "npx http-server . -p 8080",
+    "build": "echo 'Static site - no build step required'",
+    "lint:html": "echo 'HTML validation would go here'",
+    "serve": "npx http-server . -p 8080"
   },
-  "scripts": {},
+  "keywords": ["ballcourts", "special-needs", "sports", "therapy", "pickleball"],
+  "author": "Able AllStars Inc.",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/able-allstars-website.git"
+  },
+  "dependencies": {},
   "devDependencies": {}
 }

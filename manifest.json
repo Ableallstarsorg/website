@@ -1,0 +1,28 @@
+{
+  "name": "Able AllStars - Ballcourts for Special Needs",
+  "short_name": "AbleAllStars",
+  "description": "Building ballcourts for kids and adults with balance and movement disorders",
+  "start_url": "https://ableallstars.org/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#14A9FF",
+  "orientation": "portrait-primary",
+  "scope": "https://ableallstars.org/",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["sports", "health", "education"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

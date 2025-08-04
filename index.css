@@ -33,6 +33,164 @@
     50% {background-position: 36% 100%}
 }
 
+/* Logo and Header Styles */
+.header-logo-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-logo-mobile {
+    display: block;
+  }
+}
+
+/* Enhanced Button Interactions */
+.button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 169, 255, 0.3);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* Touch-friendly navigation */
+.navigation-links2-nav a {
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.navigation-links2-nav a:hover {
+  background-color: rgba(20, 169, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Enhanced mobile menu */
+.home-mobile-menu.is-active {
+  animation: slideInFromTop 0.3s ease-out;
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.video-loading {
+  animation: pulse 2s infinite;
+}
+
+/* Improved focus states for accessibility */
+a:focus, button:focus {
+  outline: 2px solid #14A9FF;
+  outline-offset: 2px;
+}
+
+/* Better spacing for touch targets */
+@media (max-width: 768px) {
+  .navigation-links2-nav a {
+    padding: 12px 16px;
+    margin: 4px 0;
+    display: block;
+  }
+  
+  .button {
+    min-height: 44px;
+    padding: 12px 24px;
+  }
+}
+
+/* Rounded Box Component */
+.rounded-box {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  line-height: 1.6;
+}
+
+/* Video Container Styles */
+.videos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: none; /* Remove iframe border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* Ensure video element specifically has rounded corners */
+.video-wrapper video {
+  border-radius: 12px !important;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+}
+
+/* Responsive adjustments for videos */
+@media (max-width: 1200px) {
+  .videos-container {
+    gap: 15px !important;
+  }
+  
+  .video-wrapper iframe,
+  .video-wrapper video {
+    width: 480px;
+    height: 270px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .videos-container {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  
+  .video-wrapper {
+    min-width: 100%;
+  }
+  
+  .video-wrapper iframe,
+  .video-wrapper video {
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+  }
+}
+
 
 
 @media(max-width: 767px) {

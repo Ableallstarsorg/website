@@ -1,9 +1,20 @@
 <html lang="en" class=" jkzurhtu idc0_350"><head>
-  <title>Able AllStars</title>
-  <meta property="og:title" content="Able AllStars">
+  <title>Able AllStars - Ballcourts for Kids & Adults with Balance and Movement Disorders</title>
+  <meta name="description" content="Able AllStars builds outdoor ballcourts for special needs kids and adults with balance and movement disorders. Supporting Parkinson's, MS, Brain Injuries, Autism Spectrum, and more.">
+  <meta property="og:title" content="Able AllStars - Ballcourts for Special Needs">
+  <meta property="og:description" content="Building ballcourts for kids and adults with balance and movement disorders. Throw, Kick, and Paddle Activities!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ableallstars.org">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <meta property="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="special needs, ballcourts, Parkinson's, MS, autism, movement disorders, pickleball, sports therapy">
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#14A9FF">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="AbleAllStars">
 <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
 
@@ -30,6 +41,15 @@
     }
   </style>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font">
+  
+  <!-- Google Analytics (replace with your tracking ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID'); // Replace with your actual GA4 measurement ID
+  </script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -49,12 +69,87 @@ document.addEventListener("DOMContentLoaded", function() {
   closeButton.addEventListener('click', toggleMobileMenu); // Reuse the same function for closing
 });
 
+// Video loading states
+function showVideoLoading(video) {
+  const container = video.parentElement;
+  const loader = container.querySelector('.video-loading');
+  if (loader) loader.style.display = 'block';
+}
+
+function hideVideoLoading(video) {
+  const container = video.parentElement;
+  const loader = container.querySelector('.video-loading');
+  if (loader) loader.style.display = 'none';
+}
+
+function showVideoError(video) {
+  const container = video.parentElement;
+  const loader = container.querySelector('.video-loading');
+  const error = container.querySelector('.video-error');
+  if (loader) loader.style.display = 'none';
+  if (error) error.style.display = 'block';
+}
+
+// Enhanced mobile navigation
+document.addEventListener('touchstart', function() {}, {passive: true});
+
+// Intersection Observer for lazy loading (future enhancement)
+if ('IntersectionObserver' in window) {
+  const lazyImages = document.querySelectorAll('img[data-src]');
+  const imageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+        imageObserver.unobserve(img);
+      }
+    });
+  });
+  lazyImages.forEach(img => imageObserver.observe(img));
+}
+
+// Performance monitoring
+if ('performance' in window) {
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const perfData = performance.getEntriesByType('navigation')[0];
+      console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart + 'ms');
+    }, 0);
+  });
+}
+
+// Service Worker Registration
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then((registration) => {
+        console.log('SW registered: ', registration);
+      })
+      .catch((registrationError) => {
+        console.log('SW registration failed: ', registrationError);
+      });
+  });
+}
+
+// Enhanced error handling
+window.addEventListener('error', (e) => {
+  console.error('Global error:', e.error);
+  // You could send this to an analytics service
+});
+
+window.addEventListener('unhandledrejection', (e) => {
+  console.error('Unhandled promise rejection:', e.reason);
+  e.preventDefault();
+});
+
 </script>
 </head>
 <body>
   <link rel="stylesheet" href="./style.css">
+  <link href="./index.css" rel="stylesheet">
   <div>
-    <img src="public/logo-300h.png" alt="Logo" class="header-logo-mobile" style="display: none;"><link href="./index.css" rel="stylesheet">
+    <img src="public/logo-300h.png" alt="Able AllStars Logo" class="header-logo-mobile">
 
     <div class="home-container">
       <header data-role="Header" class="home-header">
@@ -62,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="home-nav"><img src="public/logo-300h.png" alt="Logo" class="header-logo">
 
 <nav class="navigation-links2-nav navigation-links2-root-class-name18">
-  <a href="https://ableallstars.org" class="navigation-links2-text"><span>Home</span></a>
+  <a href="/" class="navigation-links2-text"><span>Home</span></a>
   <a href="/about" class="navigation-links2-text1"><span>About</span></a>
   <a href="/projects" class="navigation-links2-text2"><span>Projects</span></a>
   <a href="/programs" class="navigation-links2-text3"><span>Programs</span></a>
@@ -88,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 <nav class="navigation-links2-nav navigation-links2-root-class-name18">
-  <a href="https://ableallstars.org" class="navigation-links2-text"><span>Home</span></a>
+  <a href="/" class="navigation-links2-text"><span>Home</span></a>
   <a href="/about" class="navigation-links2-text1"><span>About</span></a>
   <a href="/projects" class="navigation-links2-text2"><span>Projects</span></a>
   <a href="/programs" class="navigation-links2-text3"><span>Programs</span></a>
@@ -130,10 +225,27 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
           </div>
         </div>
+                
         
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CRYzNC_5xg0?autoplay=1&amp;mute=1&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
+        <!-- Video Container for Side by Side Layout -->
+        <div class="videos-container" style="display: flex; gap: 20px; justify-content: center; align-items: flex-start; flex-wrap: wrap; margin: 20px 0;">
+          <!-- Existing YouTube Video -->
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CRYzNC_5xg0?autoplay=1&amp;mute=1&amp;controls=0" title="Able AllStars Ballcourt Overview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          
+          <!-- New Local Video (news.mp4) -->
+          <div class="video-wrapper">
+            <div class="video-container" style="position: relative;">
+              <video width="560" height="315" controls preload="metadata" aria-label="Able AllStars News and Updates" onloadstart="showVideoLoading(this)" oncanplay="hideVideoLoading(this)" onerror="showVideoError(this)">
+                <source src="assets/videos/news.mp4" type="video/mp4">
+                <p>Your browser does not support the video tag. <a href="assets/videos/news.mp4">Download the video</a> instead.</p>
+              </video>
+              <div class="video-loading" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; background: rgba(0,0,0,0.8); color: white; padding: 10px; border-radius: 5px;">Loading...</div>
+              <div class="video-error" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; background: rgba(255,0,0,0.8); color: white; padding: 10px; border-radius: 5px;">Video failed to load</div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -143,15 +255,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         <span>&nbsp;</span>
-        <style>
-          .rounded-box {
-            background-color: white;
-            border-radius: 15px; /* Adjust the radius for more or less rounded edges */
-            padding: 20px; /* Add some padding inside the box */
-            margin: 10px; /* Add some outside space around the box */
-            display: inline-block; /* Ensures the box wraps the content */
-          }
-        </style>
+
         
         <span class="rounded-box">
           Tucson architect Marc Soloway, has designed renderings for a clubhouse and ballcourts. The facility will include two ball courts with vertical walls having targets on each wall that users can test their balance and movement by either throwing, kicking, or paddle sports and ball to hit the targets. Reactive training lights will also be incorporated onto the vertical walls so users can step in front of the light station and chase the lights with their hands or feet or paddle in a timed sequence.

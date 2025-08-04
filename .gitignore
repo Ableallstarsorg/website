@@ -99,3 +99,39 @@ desktop.ini
 *.bak
 *.backup
 *.old
+
+# IDE and Editor files
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Logs and debugging
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Service worker registration (if auto-generated)
+sw-registration.js
+
+# Analytics and tracking (if storing locally)
+analytics/
+tracking/
+
+# Performance monitoring data
+performance/
+metrics/
+
+# Environment-specific files
+.env.production
+.env.staging
+config.local.js
+
+# CDN and external assets cache
+cdn-cache/
+external-assets/
